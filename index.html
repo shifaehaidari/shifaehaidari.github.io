@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Shifa-e-Haidari - Spiritual Healing through Maula Ali, Panjtan Paak, Ahl-e-Bayt. रूहानी इलाज">
-<title>Shifa-e-Haidari | شِفَا ئے حَیدَری</title>
+<meta name="description" content="Shifa-e-Haidari - Spiritual Healing Services Worldwide. Expert in Nad-e-Ali, Ruqyah, Evil Eye Protection, Black Magic Removal. Contact from USA, UK, UAE, Canada, Australia.">
+<meta name="keywords" content="spiritual healing, islamic healing, nad-e-ali, ruqyah, evil eye removal, black magic protection, wazifa, dua, istikhara, spiritual healer, muslim healer">
+<title>Shifa-e-Haidari | Spiritual Healing Worldwide | रूहानी इलाज</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
   --dark-green: #0a3d2e;
@@ -20,13 +21,15 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: 'Amiri', Georgia, serif;
+  font-family: 'Poppins', 'Amiri', Georgia, serif;
   background: var(--cream);
   color: var(--black);
   line-height: 1.8;
 }
 
-/* ===== HERO WITH GUMBAD IMAGE ===== */
+.arabic { font-family: 'Amiri', serif; direction: rtl; }
+
+/* ===== HERO ===== */
 .hero {
   min-height: 100vh;
   background: var(--dark-green);
@@ -36,105 +39,168 @@ body {
   justify-content: center;
   text-align: center;
   padding: 40px 20px;
-  position: relative;
 }
 
 .bismillah {
   font-family: 'Amiri', serif;
-  font-size: 2.5em;
+  font-size: 2.2em;
   color: var(--gold);
   margin-bottom: 30px;
   direction: rtl;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
-/* MAIN GUMBAD IMAGE */
 .gumbad-container {
   position: relative;
   margin-bottom: 30px;
 }
 
 .gumbad-image {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  border: 6px solid var(--gold);
-  box-shadow: 0 0 60px rgba(212,175,55,0.5), 0 20px 60px rgba(0,0,0,0.5);
+  border: 5px solid var(--gold);
+  box-shadow: 0 0 50px rgba(212,175,55,0.4);
   object-fit: cover;
   animation: glow 3s ease-in-out infinite;
 }
 
 @keyframes glow {
-  0%, 100% { box-shadow: 0 0 60px rgba(212,175,55,0.5), 0 20px 60px rgba(0,0,0,0.5); }
-  50% { box-shadow: 0 0 80px rgba(212,175,55,0.8), 0 20px 60px rgba(0,0,0,0.5); }
+  0%, 100% { box-shadow: 0 0 50px rgba(212,175,55,0.4); }
+  50% { box-shadow: 0 0 70px rgba(212,175,55,0.7); }
 }
 
 .gumbad-title {
   position: absolute;
-  bottom: -20px;
+  bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
   background: var(--gold);
   color: var(--dark-green);
-  padding: 10px 40px;
+  padding: 10px 35px;
   border-radius: 30px;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 700;
   white-space: nowrap;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 .main-title {
-  font-size: 3.5em;
+  font-size: 3em;
   color: #fff;
-  text-shadow: 0 4px 20px rgba(0,0,0,0.5);
-  margin-bottom: 5px;
-  margin-top: 30px;
+  margin: 30px 0 10px;
   font-weight: 700;
 }
 
-.main-title-urdu {
-  font-family: 'Noto Nastaliq Urdu', 'Amiri', serif;
-  font-size: 2.5em;
+.main-subtitle {
+  font-size: 1.8em;
   color: var(--gold);
   margin-bottom: 15px;
-  direction: rtl;
 }
 
-.subtitle {
-  font-size: 1.3em;
+.tagline {
+  font-size: 1.4em;
   color: rgba(255,255,255,0.9);
+  margin-bottom: 10px;
+}
+
+.tagline-hindi {
+  font-size: 1.2em;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 25px;
+}
+
+.worldwide-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 1.1em;
   margin-bottom: 30px;
 }
 
-.hero-btn {
+.hero-buttons { margin-top: 20px; }
+
+.btn {
   display: inline-block;
-  background: #25D366;
-  color: #fff;
-  padding: 18px 50px;
-  font-size: 1.3em;
-  font-weight: 700;
+  padding: 16px 40px;
   border-radius: 50px;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin: 8px;
   transition: all 0.3s;
-  box-shadow: 0 5px 30px rgba(37,211,102,0.5);
 }
 
-.hero-btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 40px rgba(37,211,102,0.7);
+.btn-whatsapp {
+  background: #25D366;
+  color: #fff;
+  box-shadow: 0 5px 25px rgba(37,211,102,0.4);
 }
 
-/* ===== THREE PILLARS SECTION ===== */
+.btn-whatsapp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 35px rgba(37,211,102,0.6);
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: var(--dark-green);
+}
+
+.btn-gold:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(212,175,55,0.5);
+}
+
+/* ===== INTERNATIONAL SECTION ===== */
+.international {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, var(--green), var(--dark-green));
+  text-align: center;
+}
+
+.international h2 {
+  color: var(--gold);
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+.international p {
+  color: rgba(255,255,255,0.9);
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.countries {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.country-badge {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid var(--gold);
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.1em;
+}
+
+/* ===== THREE PILLARS ===== */
 .pillars {
   padding: 80px 20px;
-  background: linear-gradient(135deg, var(--green) 0%, var(--dark-green) 100%);
+  background: var(--dark-green);
 }
 
 .pillars-title {
   text-align: center;
   color: var(--gold);
-  font-size: 2.5em;
+  font-size: 2.2em;
   margin-bottom: 50px;
 }
 
@@ -143,7 +209,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+  gap: 35px;
 }
 
 .pillar-card {
@@ -156,69 +222,125 @@ body {
 }
 
 .pillar-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  transform: translateY(-8px);
   background: rgba(255,255,255,0.12);
 }
 
-.pillar-symbol {
-  font-size: 4em;
-  margin-bottom: 20px;
-  display: block;
+.pillar-symbol { font-size: 3.5em; margin-bottom: 20px; }
+
+.pillar-title {
+  color: var(--gold);
+  font-size: 1.6em;
+  margin-bottom: 8px;
 }
 
-/* Panjtan Paak - Hand Symbol */
+.pillar-title-sub {
+  color: var(--gold-light);
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.pillar-desc {
+  color: rgba(255,255,255,0.85);
+  font-size: 1.05em;
+  line-height: 1.9;
+}
+
+/* Panjtan Hand */
 .panjtan-hand {
-  width: 100px;
-  height: 120px;
+  width: 90px;
+  height: 110px;
   margin: 0 auto 20px;
-  position: relative;
   color: var(--gold);
 }
 
 .hand-svg {
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0 0 15px rgba(212,175,55,0.6));
+  filter: drop-shadow(0 0 12px rgba(212,175,55,0.5));
 }
 
-/* Ahl-e-Bayt Symbol */
 .ahlulbayt-symbol {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   margin: 0 auto 20px;
-  border: 4px solid var(--gold);
+  border: 3px solid var(--gold);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3em;
+  font-size: 2.5em;
   color: var(--gold);
-  box-shadow: 0 0 20px rgba(212,175,55,0.4);
 }
 
-.pillar-title {
-  color: var(--gold);
-  font-size: 1.8em;
-  margin-bottom: 5px;
-}
-
-.pillar-title-hindi {
-  color: var(--gold-light);
-  font-size: 1.3em;
-  margin-bottom: 15px;
-}
-
-.pillar-desc {
-  color: rgba(255,255,255,0.85);
-  font-size: 1.1em;
-  line-height: 1.8;
-}
-
-/* ===== NAD-E-ALI SECTION ===== */
-.nadali-section {
+/* ===== SERVICES ===== */
+.services {
   padding: 80px 20px;
-  background: var(--dark-green);
+  background: var(--cream);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  color: var(--dark-green);
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  color: #666;
+  font-size: 1.2em;
+}
+
+.services-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 35px 25px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  border-top: 4px solid var(--gold);
+  transition: all 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 50px rgba(0,0,0,0.12);
+}
+
+.service-icon { font-size: 2.8em; margin-bottom: 20px; }
+
+.service-card h3 {
+  color: var(--dark-green);
+  font-size: 1.4em;
+  margin-bottom: 8px;
+}
+
+.service-card .hindi {
+  color: var(--gold);
+  font-size: 1.1em;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 1em;
+}
+
+/* ===== NAD-E-ALI ===== */
+.nadali {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, var(--dark-green), var(--green));
   text-align: center;
 }
 
@@ -226,51 +348,40 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 50px 40px;
-  background: rgba(212,175,55,0.1);
+  background: rgba(0,0,0,0.2);
   border: 3px solid var(--gold);
   border-radius: 20px;
 }
 
-.nadali-title {
+.nadali h2 {
   color: var(--gold);
-  font-size: 2.5em;
+  font-size: 2.2em;
   margin-bottom: 30px;
 }
 
 .nadali-arabic {
   font-family: 'Amiri', serif;
-  font-size: 2em;
+  font-size: 1.9em;
   color: #fff;
   direction: rtl;
   line-height: 2.2;
   margin-bottom: 30px;
 }
 
-.nadali-translation {
-  color: rgba(255,255,255,0.9);
-  font-size: 1.2em;
+.nadali-english {
+  color: var(--gold-light);
+  font-size: 1.3em;
+  line-height: 2;
+  margin-bottom: 15px;
+}
+
+.nadali-hindi {
+  color: rgba(255,255,255,0.8);
+  font-size: 1.1em;
   line-height: 2;
 }
 
-.nadali-btn {
-  display: inline-block;
-  margin-top: 30px;
-  background: var(--gold);
-  color: var(--dark-green);
-  padding: 15px 40px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.1em;
-  transition: all 0.3s;
-}
-
-.nadali-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(212,175,55,0.5);
-}
-
-/* ===== ABOUT SECTION ===== */
+/* ===== ABOUT ===== */
 .about {
   padding: 80px 20px;
   background: var(--cream);
@@ -282,15 +393,9 @@ body {
   text-align: center;
 }
 
-.section-title {
+.about-container h2 {
   color: var(--dark-green);
   font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.section-title-sub {
-  color: var(--green);
-  font-size: 1.5em;
   margin-bottom: 30px;
 }
 
@@ -309,96 +414,64 @@ body {
 
 .about-designation {
   color: var(--gold);
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: 600;
 }
-
-/* ===== SERVICES ===== */
-.services {
-  padding: 80px 20px;
-  background: var(--green);
-}
-
-.services .section-title { color: #fff; text-align: center; margin-bottom: 50px; }
-
-.services-grid {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-}
-
-.service-item {
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(212,175,55,0.4);
-  border-radius: 15px;
-  padding: 30px;
-  text-align: center;
-  transition: all 0.3s;
-}
-
-.service-item:hover {
-  border-color: var(--gold);
-  transform: translateY(-5px);
-  background: rgba(255,255,255,0.15);
-}
-
-.service-icon { font-size: 2.5em; margin-bottom: 15px; }
-.service-item h3 { color: var(--gold); font-size: 1.4em; margin-bottom: 8px; }
-.service-item p { color: rgba(255,255,255,0.8); font-size: 1.05em; }
 
 /* ===== CONTACT ===== */
 .contact {
   padding: 80px 20px;
-  background: var(--cream);
+  background: var(--dark-green);
   text-align: center;
 }
 
-.contact-box {
-  max-width: 500px;
-  margin: 40px auto 0;
-  background: var(--dark-green);
-  padding: 50px 40px;
-  border-radius: 20px;
-  color: #fff;
+.contact h2 {
+  color: var(--gold);
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.contact > p {
+  color: rgba(255,255,255,0.8);
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .contact-item {
-  margin-bottom: 25px;
-  font-size: 1.3em;
+  background: rgba(255,255,255,0.1);
+  padding: 30px 40px;
+  border-radius: 15px;
+  min-width: 200px;
 }
 
-.contact-item span { display: block; color: var(--gold); font-size: 0.85em; margin-bottom: 5px; }
+.contact-item .icon { font-size: 2em; margin-bottom: 10px; }
+.contact-item h4 { color: var(--gold); margin-bottom: 5px; font-size: 1.1em; }
+.contact-item p { color: #fff; font-size: 1.2em; }
 
-.whatsapp-btn {
-  display: inline-block;
-  background: #25D366;
-  color: #fff;
-  padding: 18px 50px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-size: 1.3em;
-  font-weight: 700;
-  margin-top: 20px;
-  transition: all 0.3s;
-}
-
-.whatsapp-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(37,211,102,0.4);
+.contact-note {
+  color: var(--gold-light);
+  font-size: 1.1em;
+  margin-bottom: 30px;
 }
 
 /* ===== DONATE ===== */
 .donate {
   padding: 60px 20px;
-  background: var(--dark-green);
+  background: var(--green);
   text-align: center;
   color: #fff;
 }
 
-.donate h2 { color: var(--gold); font-size: 2.2em; margin-bottom: 10px; }
-.donate > p { margin-bottom: 30px; opacity: 0.9; font-size: 1.1em; }
+.donate h2 { color: var(--gold); font-size: 2em; margin-bottom: 10px; }
+.donate > p { margin-bottom: 30px; opacity: 0.9; }
 
 .donate-cards {
   display: flex;
@@ -415,13 +488,13 @@ body {
   min-width: 280px;
 }
 
-.donate-card h3 { margin-bottom: 15px; font-size: 1.2em; }
+.donate-card h3 { margin-bottom: 15px; }
 .donate-card code {
   display: block;
   background: var(--cream);
   padding: 15px;
   border-radius: 10px;
-  font-size: 1em;
+  font-size: 0.95em;
   word-break: break-all;
 }
 
@@ -435,15 +508,31 @@ body {
 
 .footer-arabic {
   font-family: 'Amiri', serif;
-  font-size: 2.2em;
+  font-size: 2em;
   color: var(--gold);
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   direction: rtl;
 }
 
-.footer p { opacity: 0.6; font-size: 1.1em; }
+.social-links { margin: 25px 0; }
+.social-links a {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 2.2em;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+.social-links a:hover { transform: scale(1.2); }
 
-/* ===== FLOATING WHATSAPP ===== */
+.footer-text {
+  color: var(--gold);
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.footer p { opacity: 0.6; }
+
+/* ===== WHATSAPP FLOAT ===== */
 .wa-float {
   position: fixed;
   bottom: 25px;
@@ -470,58 +559,75 @@ body {
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
-  .gumbad-image { width: 280px; height: 280px; }
-  .gumbad-title { font-size: 1.2em; padding: 8px 25px; }
-  .main-title { font-size: 2.5em; }
-  .main-title-urdu { font-size: 1.8em; }
-  .bismillah { font-size: 1.8em; }
-  .pillars-title { font-size: 2em; }
-  .pillar-card { padding: 30px 20px; }
+  .gumbad-image { width: 250px; height: 250px; }
+  .main-title { font-size: 2.2em; }
+  .main-subtitle { font-size: 1.4em; }
+  .pillars-title { font-size: 1.8em; }
+  .section-header h2 { font-size: 2em; }
   .nadali-arabic { font-size: 1.4em; }
-  .nadali-box { padding: 30px 20px; }
+  .btn { padding: 14px 30px; font-size: 1em; }
 }
 </style>
 </head>
 <body>
 
-<!-- ===== HERO WITH GUMBAD ===== -->
+<!-- ===== HERO ===== -->
 <section class="hero">
 <p class="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْم</p>
 
 <div class="gumbad-container">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Quran_opened.jpg/800px-Quran_opened.jpg" alt="Quran-e-Paak - Kalam Allah" class="gumbad-image">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Quran_opened.jpg/800px-Quran_opened.jpg" alt="Holy Quran - Kalam Allah" class="gumbad-image">
 <div class="gumbad-title">SHIFA-E-HAIDARI</div>
 </div>
 
-<h1 class="main-title">शिफ़ा-ए-हैदरी</h1>
-<p class="main-title-urdu">شِفَا ئے حَیدَری</p>
-<p class="subtitle">Spiritual Healing | रूहानी इलाज<br>मौला अली (अ.स.) की शफाअत से</p>
-<a href="https://wa.me/919314461360?text=Assalamu%20Alaikum!" class="hero-btn">💬 WhatsApp करें</a>
+<h1 class="main-title">Spiritual Healing Services</h1>
+<p class="main-subtitle">شِفَا ئے حَیدَری | शिफ़ा-ए-हैदरी</p>
+<p class="tagline">Expert Spiritual Healer | Nad-e-Ali Specialist</p>
+<p class="tagline-hindi">रूहानी इलाज | نادِ علی کے ماہر</p>
+
+<div class="worldwide-badge">🌍 Serving Clients Worldwide</div>
+
+<div class="hero-buttons">
+<a href="https://wa.me/919314461360?text=Assalamu%20Alaikum!%20I%20need%20spiritual%20healing%20help." class="btn btn-whatsapp">💬 WhatsApp Now</a>
+<a href="#services" class="btn btn-gold">View Services</a>
+</div>
+</section>
+
+<!-- ===== INTERNATIONAL ===== -->
+<section class="international">
+<h2>🌍 Available Worldwide</h2>
+<p>We provide spiritual healing services to clients across the globe. Distance is no barrier — healing can be done remotely through prayers and spiritual guidance.</p>
+<div class="countries">
+<span class="country-badge">🇮🇳 India</span>
+<span class="country-badge">🇦🇪 UAE</span>
+<span class="country-badge">🇸🇦 Saudi Arabia</span>
+<span class="country-badge">🇬🇧 United Kingdom</span>
+<span class="country-badge">🇺🇸 USA</span>
+<span class="country-badge">🇨🇦 Canada</span>
+<span class="country-badge">🇦🇺 Australia</span>
+<span class="country-badge">🇵🇰 Pakistan</span>
+</div>
 </section>
 
 <!-- ===== THREE PILLARS ===== -->
 <section class="pillars">
-<h2 class="pillars-title">☪ پنجتن پاک ☪ अहल-ए-बैत ☪ Ahl-e-Bayt</h2>
+<h2 class="pillars-title">Our Spiritual Foundation</h2>
 <div class="pillars-grid">
 
-<!-- MAULA ALI -->
 <div class="pillar-card">
-<span class="pillar-symbol">🕌</span>
-<h2 class="pillar-title">Maula Ali (a.s.)</h2>
-<p class="pillar-title-hindi">मौला अली (अ.स.)</p>
+<div class="pillar-symbol">🕌</div>
+<h3 class="pillar-title">Maula Ali (a.s.)</h3>
+<p class="pillar-title-sub">मौला अली | امام علی</p>
 <p class="pillar-desc">
-امیرالمومنین علی ابن ابی طالب<br>
 Ameer-ul-Momineen<br>
-अमीर-उल-मोमिनीन<br>
-شیرِ خدا - शेर-ए-खुदा
+The Lion of Allah<br>
+शेर-ए-खुदा | شیرِ خدا
 </p>
 </div>
 
-<!-- PANJTAN PAAK -->
 <div class="pillar-card">
 <div class="panjtan-hand">
 <svg class="hand-svg" viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg">
-<!-- Hand of Fatima / Panja -->
 <path d="M50 5 L50 40 M32 8 L36 40 M68 8 L64 40 M18 25 L28 45 M82 25 L72 45 
          M20 45 Q5 75 20 105 Q35 125 50 125 Q65 125 80 105 Q95 75 80 45 
          L72 45 L64 40 L50 40 L36 40 L28 45 Z" 
@@ -530,128 +636,150 @@ Ameer-ul-Momineen<br>
 <text x="50" y="88" text-anchor="middle" font-size="20" fill="currentColor" font-family="Amiri">٥</text>
 </svg>
 </div>
-<h2 class="pillar-title">Panjtan Paak</h2>
-<p class="pillar-title-hindi">पंजतन पाक</p>
+<h3 class="pillar-title">Panjtan Paak</h3>
+<p class="pillar-title-sub">पंजतन पाक | پنجتن پاک</p>
 <p class="pillar-desc">
-محمد ﷺ ❁ علی ❁ فاطمہ ❁ حسن ❁ حسین<br>
-The Holy Five<br>
-पवित्र पाँच हस्तियाँ<br>
-پانچ مقدس ہستیاں
+Muhammad ﷺ, Ali, Fatima,<br>
+Hasan, Husain<br>
+The Holy Five
 </p>
 </div>
 
-<!-- AHL-E-BAYT -->
 <div class="pillar-card">
 <div class="ahlulbayt-symbol">☪</div>
-<h2 class="pillar-title">Ahl-e-Bayt</h2>
-<p class="pillar-title-hindi">अहल-ए-बैत</p>
+<h3 class="pillar-title">Ahl-e-Bayt</h3>
+<p class="pillar-title-sub">अहल-ए-बैत | اهل بیت</p>
 <p class="pillar-desc">
-اهل بیت اطہار<br>
 The Purified Household<br>
-पाक घराना<br>
-رسول ﷺ کا پاکیزہ گھرانہ
+of Prophet Muhammad ﷺ<br>
+पाक घराना
 </p>
+</div>
+
+</div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+<div class="section-header">
+<h2>Our Services</h2>
+<p>Spiritual solutions for all your problems | हर परेशानी का रूहानी हल</p>
+</div>
+<div class="services-grid">
+
+<div class="service-card">
+<div class="service-icon">🔮</div>
+<h3>Evil Eye & Black Magic</h3>
+<p class="hindi">नज़र और जादू से निजात</p>
+<p>Protection and removal of evil eye (nazar), black magic, and negative spiritual influences.</p>
+</div>
+
+<div class="service-card">
+<div class="service-icon">📿</div>
+<h3>Nad-e-Ali Guidance</h3>
+<p class="hindi">नाद-ए-अली मार्गदर्शन</p>
+<p>Learn the correct recitation and benefits of the powerful Nad-e-Ali prayer.</p>
+</div>
+
+<div class="service-card">
+<div class="service-icon">🤲</div>
+<h3>Prayers & Wazifa</h3>
+<p class="hindi">दुआ और वज़ीफ़े</p>
+<p>Specialized prayers for employment, marriage, children, debt relief, and success.</p>
+</div>
+
+<div class="service-card">
+<div class="service-icon">🌟</div>
+<h3>Istikhara</h3>
+<p class="hindi">इस्तिखारा</p>
+<p>Divine guidance for important life decisions — marriage, business, travel, etc.</p>
+</div>
+
+<div class="service-card">
+<div class="service-icon">💚</div>
+<h3>Physical Healing</h3>
+<p class="hindi">जिस्मानी राहत</p>
+<p>Spiritual healing support for physical ailments through prayers and duas.</p>
+</div>
+
+<div class="service-card">
+<div class="service-icon">👨‍👩‍👧‍👦</div>
+<h3>Family Problems</h3>
+<p class="hindi">घरेलू मसायल</p>
+<p>Resolution of domestic issues, husband-wife conflicts, and family harmony.</p>
 </div>
 
 </div>
 </section>
 
 <!-- ===== NAD-E-ALI ===== -->
-<section class="nadali-section" id="nadali">
+<section class="nadali" id="nadali">
 <div class="nadali-box">
-<h2 class="nadali-title">🗝️ नाद-ए-अली | Nad-e-Ali | نادِ علی</h2>
+<h2>🗝️ Nad-e-Ali | The Key to All Problems</h2>
 <p class="nadali-arabic">
 نَادِ عَلِيًّا مَظْهَرَ الْعَجَائِبِ ❁ تَجِدْهُ عَوْنًا لَكَ فِي النَّوَائِبِ<br>
 كُلُّ هَمٍّ وَغَمٍّ سَيَنْجَلِي ❁ بِوَلَايَتِكَ يَا عَلِيُّ يَا عَلِيُّ يَا عَلِيّ
 </p>
-<p class="nadali-translation">
-<strong>अली को पुकारो, जो अजीबों का मज़हर है</strong><br>
-हर मुसीबत में तुम उन्हें मददगार पाओगे<br><br>
-<strong>हर ग़म और परेशानी दूर होगी</strong><br>
-आपकी विलायत से, या अली! या अली! या अली!
+<p class="nadali-english">
+<strong>"Call upon Ali, who is the manifestation of wonders,<br>
+You will find him a helper in all difficulties.<br>
+All grief and sorrow will disappear,<br>
+Through your guardianship, O Ali! O Ali! O Ali!"</strong>
 </p>
-<a href="nadali.html" class="nadali-btn">📿 पूरी नाद-ए-अली पढ़ें</a>
+<p class="nadali-hindi">
+अली को पुकारो, जो अजीबों का मज़हर है<br>
+हर मुसीबत में तुम उन्हें मददगार पाओगे
+</p>
 </div>
 </section>
 
 <!-- ===== ABOUT ===== -->
 <section class="about" id="about">
 <div class="about-container">
-<h2 class="section-title">परिचय | About</h2>
-<p class="section-title-sub">تعارف | Introduction</p>
+<h2>About the Healer</h2>
 <p class="about-text">
-अल्लाह की रहमत, रसूल-ए-पाक (ﷺ) की शफाअत, मौला अली (अ.स.) और अहल-ए-बैत (अ.स.) के वसीले से हम लोगों की रूहानी और जिस्मानी परेशानियों में मदद करते हैं।
+With the mercy of Allah, the intercession of Prophet Muhammad ﷺ, and through the spiritual power of Maula Ali (a.s.) and Ahl-e-Bayt, I have been helping people overcome their spiritual and physical troubles for many years.
 </p>
 <p class="about-text">
-Through the mercy of Allah, intercession of the Holy Prophet (ﷺ), and the wasila of Maula Ali (a.s.) and Ahl-e-Bayt (a.s.), we help people overcome spiritual and physical troubles.
+अल्लाह की रहमत, रसूल-ए-पाक ﷺ की शफाअत, और मौला अली (अ.स.) व अहल-ए-बैत के वसीले से मैं लोगों की रूहानी और जिस्मानी परेशानियों में मदद करता हूं।
 </p>
-<p class="about-name">Salim Nizami | सलीम निज़ामी</p>
-<p class="about-designation">आलिम-ए-नाद-ए-अली | عالمِ نادِ علی</p>
-</div>
-</section>
-
-<!-- ===== SERVICES ===== -->
-<section class="services" id="services">
-<h2 class="section-title">خدمات | Services | सेवाएं</h2>
-<div class="services-grid">
-<div class="service-item">
-<div class="service-icon">🔮</div>
-<h3>रूहानी इलाज</h3>
-<p>Spiritual Healing | روحانی علاج<br>नज़र, जादू से निजात</p>
-</div>
-<div class="service-item">
-<div class="service-icon">📿</div>
-<h3>नाद-ए-अली मार्गदर्शन</h3>
-<p>Nad-e-Ali Guidance<br>نادِ علی کی تعلیم</p>
-</div>
-<div class="service-item">
-<div class="service-icon">🤲</div>
-<h3>दुआ और वज़ीफ़े</h3>
-<p>Prayers & Wazifa<br>دعا اور وظائف</p>
-</div>
-<div class="service-item">
-<div class="service-icon">🌟</div>
-<h3>इस्तिखारा</h3>
-<p>Divine Guidance | استخارہ<br>अल्लाह की रहनुमाई</p>
-</div>
-<div class="service-item">
-<div class="service-icon">💚</div>
-<h3>जिस्मानी राहत</h3>
-<p>Physical Healing<br>جسمانی علاج</p>
-</div>
-<div class="service-item">
-<div class="service-icon">👨‍👩‍👧‍👦</div>
-<h3>घरेलू मसायल</h3>
-<p>Family Issues | گھریلو مسائل<br>घरेलू सुलह</p>
-</div>
+<p class="about-name">Salim Nizami</p>
+<p class="about-designation">Specialist in Nad-e-Ali | आलिम-ए-नाद-ए-अली</p>
 </div>
 </section>
 
 <!-- ===== CONTACT ===== -->
 <section class="contact" id="contact">
-<h2 class="section-title">संपर्क करें | Contact</h2>
-<p class="section-title-sub">رابطہ کریں</p>
-<div class="contact-box">
+<h2>Contact Us</h2>
+<p>Available for clients worldwide — Reach out via WhatsApp</p>
+
+<div class="contact-grid">
 <div class="contact-item">
-<span>📞 Phone | فون</span>
-+91 93144 61360
-</div>
-<div class="contact-item">
-<span>⏰ Timing | وقت</span>
-9 AM - 9 PM (IST)
+<div class="icon">📞</div>
+<h4>Phone / WhatsApp</h4>
+<p>+91 93144 61360</p>
 </div>
 <div class="contact-item">
-<span>📍 Location | جگہ</span>
-Rajasthan, India
+<div class="icon">⏰</div>
+<h4>Available Hours</h4>
+<p>9 AM - 9 PM (IST)</p>
 </div>
-<a href="https://wa.me/919314461360?text=Assalamu%20Alaikum!%20Mujhe%20madad%20chahiye." class="whatsapp-btn">💬 WhatsApp करें</a>
+<div class="contact-item">
+<div class="icon">🌍</div>
+<h4>Service Area</h4>
+<p>Worldwide</p>
 </div>
+</div>
+
+<p class="contact-note">💬 WhatsApp is the fastest way to reach us — we respond within hours!</p>
+
+<a href="https://wa.me/919314461360?text=Assalamu%20Alaikum!%20I%20need%20spiritual%20healing%20help." class="btn btn-whatsapp">💬 Message on WhatsApp</a>
 </section>
 
 <!-- ===== DONATE ===== -->
 <section class="donate" id="donate">
-<h2>💝 सदक़ा-ए-जारिया | صدقہ جاریہ</h2>
-<p>आपका सदक़ा इस नेक काम को जारी रखने में मदद करता है</p>
+<h2>💝 Sadqa-e-Jariya (Donation)</h2>
+<p>Your donations help us continue this spiritual service | आपका सदक़ा इस नेक काम को जारी रखता है</p>
 <div class="donate-cards">
 <div class="donate-card">
 <h3>🇮🇳 India (UPI)</h3>
@@ -667,17 +795,19 @@ Rajasthan, India
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
 <p class="footer-arabic">يَا عَلِيُّ يَا عَظِيم ❁ يَا فَاطِمَةُ الزَّهْرَاء</p>
-<div style="margin: 25px 0;">
-<a href="https://youtube.com/@nizami-dw6ul" target="_blank" style="display:inline-block; margin: 0 15px; font-size: 2.5em; color: #ff0000; text-decoration: none;">▶️</a>
-<a href="https://www.facebook.com/share/174qykFLdJ/" target="_blank" style="display:inline-block; margin: 0 15px; font-size: 2.5em; color: #1877F2; text-decoration: none;">📘</a>
-<a href="https://wa.me/919314461360" target="_blank" style="display:inline-block; margin: 0 15px; font-size: 2.5em; color: #25D366; text-decoration: none;">💬</a>
+
+<div class="social-links">
+<a href="https://youtube.com/@nizami-dw6ul" target="_blank" title="YouTube">▶️</a>
+<a href="https://www.facebook.com/share/174qykFLdJ/" target="_blank" title="Facebook">📘</a>
+<a href="https://wa.me/919314461360" target="_blank" title="WhatsApp">💬</a>
 </div>
-<p style="color: var(--gold); margin-bottom: 10px;">📺 YouTube | 📘 Facebook | 💬 WhatsApp</p>
-<p>© 2026 Shifa-e-Haidari | شِفَا ئے حَیدَری | शिफ़ा-ए-हैदरी</p>
+
+<p class="footer-text">📺 YouTube | 📘 Facebook | 💬 WhatsApp</p>
+<p>© 2026 Shifa-e-Haidari | Spiritual Healing Worldwide</p>
 </footer>
 
 <!-- WhatsApp Float -->
-<a href="https://wa.me/919314461360" class="wa-float">💬</a>
+<a href="https://wa.me/919314461360?text=Assalamu%20Alaikum!%20I%20need%20help." class="wa-float">💬</a>
 
 </body>
 </html>
